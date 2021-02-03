@@ -488,3 +488,7 @@ ul.top-links>li path {
     font-size: .7rem;
     color: #333;
 }
+.features img {
+    max-width: 100px;
+    margin: 0 25px 20px;
+}
