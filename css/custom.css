@@ -145,40 +145,18 @@ ul.top-links>li>i
 ul.top-links>li path {
     fill: var(--secondary-color);
 }
-.classy-navbar .classynav ul li a {
-    font-size: 14px;
-    color: #000;
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 0 !important;
-    font-family: sans-serif;
-    text-transform: unset;
-}
 .classy-navbar .classynav > ul > li:hover > a {
     color: var(--third-color);
 }
 .classy-navbar .classynav > ul > li svg  {
-    /* padding-left: 5px; */
     transition: 400ms;
 }
 .header-top.classy-navbar .classynav > ul > li:hover svg {
     transform: rotate(-180deg);
 }
-.breakpoint-off .classynav ul li .dropdown {
-    border-radius: 0;
-    box-shadow: -2px 3px 12px 0px #27272773;
-    /* margin-top: 10px; */
-    padding: 0;
-    width: 200px;
-}
 .classynav ul li.cn-dropdown-item ul li {
     padding: 15px 20px;
     border-bottom: solid 1px #80808030;
-}
-.classy-navbar .classynav ul li .dropdown li a {
-    color: #000;
-    font-size: 14px;
 }
 
 .classynav ul li.cn-dropdown-item ul li:hover a {
@@ -211,21 +189,17 @@ ul.top-links>li path {
     color: #FFF;
     text-decoration: unset;
 }
-.header-bottom.classy-navbar .classynav ul li a:hover {
-    color: #FFF;
-}
 .header-bottom.classy-navbar .classynav ul li {
     height: 50px;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
+    cursor: pointer;
+    display: flex;
 }
 .header-bottom.classy-navbar .classynav ul li span {
     padding-right: 5px;
-}
-.header-bottom.classy-navbar .classynav ul li:hover {
-    background-color: #575757;
 }
 .btn-primary {
     background: linear-gradient(180deg,#42a1ec 0,#0070c1);
@@ -489,4 +463,38 @@ ul.top-links>li path {
 .features img {
     max-width: 100px;
     margin: 0 25px 20px;
+}
+.classynav ul li.cn-dropdown-item, 
+.classynav ul li.cn-dropdown-item ul li {
+    z-index: 99;
+    cursor: pointer;
+}
+.breakpoint-off .classynav.click-dropdown  ul li:hover .dropdown, 
+.breakpoint-off .classynav.click-dropdown  ul li:hover .megamenu {
+    animation: unset !important;
+    visibility: hidden;
+}
+.breakpoint-off .classynav.click-dropdown  ul li.active .dropdown, 
+.breakpoint-off .classynav.click-dropdown  ul li.active .megamenu {
+    animation: unset !important;
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.breakpoint-off .classynav.click-dropdown>ul>li:hover {
+    background-color: #575757;
+}
+.breakpoint-off .classynav.click-dropdown >ul>li.active {
+    background-color: #575757;
+}
+.bg-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: #000000b8;    
+    /* visibility: hidden; */
+}
+.bg-modal.hide {
+    visibility: hidden;
 }

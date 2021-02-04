@@ -29,7 +29,7 @@
     </div>
   </div>
   <!-- Header Area-->
-  <header class="header-area breakpoint-off" id="saasboxNav">
+  <header class="header-area breakpoint-off" id="appNav">
     <div class="header-top container-fluid classy-navbar ">
       <div class="w-100 p-3 d-flex align-items-center justify-content-between">
         <div class="logo mr-15">
@@ -51,9 +51,11 @@
           <ul class="d-flex top-links">
             <li><a href="#">Blog</a></li>
             <li><a href="#">Guides</a></li>
-            <li><a href="#">span</a> <svg aria-hidden="true" focusable="false" data-prefix="far"
-                data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 " role="img"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
+            <li>
+              <a href="#">span</a>
+              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-down"
+                class="svg-inline--fa fa-chevron-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512" width="20" height="20">
                 <path fill="currentColor"
                   d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z">
                 </path>
@@ -77,15 +79,66 @@
     </div>
     <div class="header-bottom container-fluid classy-navbar ">
       <div class="w-100 p-3 d-flex align-items-center justify-content-between">
-        <div class="classynav">
+        <div class="classynav click-dropdown">
           <ul class="d-flex top-links">
-            <li><a href="#"><span>Personal Car Leasing</span></a><svg aria-hidden="true" focusable="false"
-                data-prefix="far" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 " role="img"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
+            <li class="">
+              <a>
+                <span>Personal Car Leasing</span>
+              </a>
+              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-down"
+                class="svg-inline--fa fa-chevron-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512" width="20" height="20">
                 <path fill="currentColor"
                   d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z">
                 </path>
-              </svg></li>
+              </svg>
+              <ul class="dropdown">
+                <li><a href="#">Car Leasing </a></li>
+                <li>
+                  <a >Manufacturer</a>
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512" width="18" height="18">
+                    <path fill="currentColor"
+                      d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                  </svg>
+                </li>
+                <li>
+                  <a >Model</a>
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512" width="18" height="18">
+                    <path fill="currentColor"
+                      d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                  </svg>
+                </li>
+                <li>
+                  <a >Budget</a>
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512" width="18" height="18">
+                    <path fill="currentColor"
+                      d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                  </svg>
+                </li>
+                <li>
+                  <a >Body</a>
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512" width="18" height="18">
+                    <path fill="currentColor"
+                      d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                  </svg>
+                </li>
+                <li><a href="#">In Stock</a></li>
+                <li><a href="#">Short Term Leasing</a></li>
+                <li><a href="#">Hydrogen Leasing</a></li>
+              </ul>
+            </li>
             <li><a href="#"><span>Business Car Leasing</span></a><svg aria-hidden="true" focusable="false"
                 data-prefix="far" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 " role="img"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
@@ -134,11 +187,15 @@
         <h1 class="text-white wow animated fadeInLeft">
           <strong>Find an affordable lease deal on a brand new vehicle</strong>
         </h1>
-        <h2 class="text-white mb-3 mb-md-5 wow animated fadeInLeft delay-2">Drive away a brand new vehicle for less with Leasing Options. We guarantee
+        <h2 class="text-white mb-3 mb-md-5 wow animated fadeInLeft delay-2">Drive away a brand new vehicle for less with
+          Leasing Options. We guarantee
           the best deals on the latest cars and vans from trusted manufacturers – with an unbeatable 5 star
           service.<br><br>Browse our affordable deals now or let us help find your perfect vehicle below.</h2>
-        <button class="btn btn-primary btn-lg btn-fluid-xs mb-3 mb-md-5 mr-sm-3 mr-15 wow animated fadeInLeft delay-3">Search for a Car</button>
-        <a class="btn btn-secondary btn-lg btn-fluid-xs mb-3 mb-md-5 wow animated fadeInRight delay-4" role="button" href="/car-leasing-deals">View
+        <button
+          class="btn btn-primary btn-lg btn-fluid-xs mb-3 mb-md-5 mr-sm-3 mr-15 wow animated fadeInLeft delay-3">Search
+          for a Car</button>
+        <a class="btn btn-secondary btn-lg btn-fluid-xs mb-3 mb-md-5 wow animated fadeInRight delay-4" role="button"
+          href="/car-leasing-deals">View
           Special Offers</a>
 
         <div class="trust-mini_trust-mini__Q0ovD ">
@@ -157,9 +214,11 @@
     <div class="row">
       <div class="col-24 pb-3 pb-md-5">
         <h2 class="text-md-center">
-          <span class="wow animated fadeInLeft">Leasing Options - </span><span class="wow animated fadeInRight delay-1">The Car Leasing Specialists</span>
+          <span class="wow animated fadeInLeft">Leasing Options - </span><span
+            class="wow animated fadeInRight delay-1">The Car Leasing Specialists</span>
         </h2>
-        <p class="wow animated fadeIn">We make it easy to lease cars and vans because our experts are always on hand to help you every step of the
+        <p class="wow animated fadeIn">We make it easy to lease cars and vans because our experts are always on hand to
+          help you every step of the
           way, and our Price Match Promise means you'll always get the best deal available.</p>
         <p>Leasing Options was created to help people lease cars they love at prices they adore. Over a quarter of a
           century later, that's still our sole mission. With <a class="text-decoration-none"
@@ -175,24 +234,21 @@
           src="./img/ico/manufacturer-icon.svg">
         <h4 class="h5 mb-0">UK manufacturer warranties</h4>
       </div>
-      <div class="col d-flex justify-content-center align-items-center wow animated fadeInUp delay-1" >
-        <img class="img-fluid px-2 ls-is-cached lazyloaded" alt="Delivery Icon"
-          src="./img/ico/delivery-icon.svg">
+      <div class="col d-flex justify-content-center align-items-center wow animated fadeInUp delay-1">
+        <img class="img-fluid px-2 ls-is-cached lazyloaded" alt="Delivery Icon" src="./img/ico/delivery-icon.svg">
         <h4 class="h5 mb-0">Delivered to your door</h4>
       </div>
-      <div class="col d-flex justify-content-center align-items-center wow animated fadeInUp delay-2" >
+      <div class="col d-flex justify-content-center align-items-center wow animated fadeInUp delay-2">
         <img class="img-fluid px-2 ls-is-cached lazyloaded" alt="Part Exchange Icon"
           src="./img/ico/part-exchange-icon.svg">
         <h4 class="h5 mb-0">Part exchange available</h4>
       </div>
-      <div class="col d-flex justify-content-center align-items-center wow animated fadeInUp delay-3" >
-        <img class="img-fluid px-2 ls-is-cached lazyloaded" alt="Price Match Icon"
-          src="./img/ico/price-match-icon.svg">
+      <div class="col d-flex justify-content-center align-items-center wow animated fadeInUp delay-3">
+        <img class="img-fluid px-2 ls-is-cached lazyloaded" alt="Price Match Icon" src="./img/ico/price-match-icon.svg">
         <h4 class="h5 mb-0">Price match promise</h4>
       </div>
-      <div class="col d-flex justify-content-center align-items-center wow animated fadeInUp delay-4" >
-        <img class="img-fluid px-2 ls-is-cached lazyloaded" alt="Service Icon"
-          src="./img/ico/service-icon.svg">
+      <div class="col d-flex justify-content-center align-items-center wow animated fadeInUp delay-4">
+        <img class="img-fluid px-2 ls-is-cached lazyloaded" alt="Service Icon" src="./img/ico/service-icon.svg">
         <h4 class="h5 mb-0">Established for 30 years</h4>
       </div>
     </div>
@@ -250,8 +306,7 @@
           <div class="card-shop-header">
             <div class="">
               <a class="w-100 d-block text-decoration-none" href="#">
-                <img alt="Skoda Fabia Hatchback 1.0 MPI SE 5dr" class="izmo-image lazyloaded"
-                  src="./img/shop/1.webp">
+                <img alt="Skoda Fabia Hatchback 1.0 MPI SE 5dr" class="izmo-image lazyloaded" src="./img/shop/1.webp">
               </a>
             </div>
             <div class="card-shop-title">
@@ -283,8 +338,7 @@
           <div class="card-shop-header">
             <div class="">
               <a class="w-100 d-block text-decoration-none" href="#">
-                <img alt="Skoda Fabia Hatchback 1.0 MPI SE 5dr" class="izmo-image lazyloaded"
-                  src="./img/shop/2.webp">
+                <img alt="Skoda Fabia Hatchback 1.0 MPI SE 5dr" class="izmo-image lazyloaded" src="./img/shop/2.webp">
               </a>
             </div>
             <div class="card-shop-title">
@@ -316,8 +370,7 @@
           <div class="card-shop-header">
             <div class="">
               <a class="w-100 d-block text-decoration-none" href="#">
-                <img alt="Skoda Fabia Hatchback 1.0 MPI SE 5dr" class="izmo-image lazyloaded"
-                  src="./img/shop/3.webp">
+                <img alt="Skoda Fabia Hatchback 1.0 MPI SE 5dr" class="izmo-image lazyloaded" src="./img/shop/3.webp">
               </a>
             </div>
             <div class="card-shop-title">
@@ -349,8 +402,7 @@
           <div class="card-shop-header">
             <div class="">
               <a class="w-100 d-block text-decoration-none" href="#">
-                <img alt="Skoda Fabia Hatchback 1.0 MPI SE 5dr" class="izmo-image lazyloaded"
-                  src="./img/shop/4.webp">
+                <img alt="Skoda Fabia Hatchback 1.0 MPI SE 5dr" class="izmo-image lazyloaded" src="./img/shop/4.webp">
               </a>
             </div>
             <div class="card-shop-title">
@@ -412,8 +464,7 @@
     <div class="row">
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/abarth">
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/abarth">
             <img height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Abarth Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/abarth.svg"><span
               class="align-self-end">Abarth</span></a></div>
@@ -422,117 +473,104 @@
         <div class="card-badge_card-badge__1zyvQ"><a
             class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
             href="/car-leasing/alfa-romeo"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/alfa-romeo.svg"
-              width="55" height="55" class="img-fluid align-self-start ls-is-cached lazyloaded"
-              alt="Alfa Romeo Car"
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/alfa-romeo.svg" width="55"
+              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Alfa Romeo Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/alfa-romeo.svg"><span
               class="align-self-end">Alfa Romeo</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/audi"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/audi.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Audi Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/audi"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/audi.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Audi Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/audi.svg"><span
               class="align-self-end">Audi</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/bmw"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/bmw.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="BMW Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/bmw"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/bmw.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="BMW Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/bmw.svg"><span
               class="align-self-end">BMW</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/citroen"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/citroen.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Citroen Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/citroen"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/citroen.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Citroen Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/citroen.svg"><span
               class="align-self-end">Citroen</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/cupra"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/cupra.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Cupra Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/cupra"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/cupra.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Cupra Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/cupra.svg"><span
               class="align-self-end">Cupra</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/ds"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/ds.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="DS Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/ds"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/ds.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="DS Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/ds.svg"><span
               class="align-self-end">DS</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/fiat"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/fiat.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Fiat Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/fiat"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/fiat.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Fiat Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/fiat.svg"><span
               class="align-self-end">Fiat</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/ford"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/ford.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Ford Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/ford"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/ford.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Ford Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/ford.svg"><span
               class="align-self-end">Ford</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/honda"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/honda.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Honda Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/honda"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/honda.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Honda Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/honda.svg"><span
               class="align-self-end">Honda</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/hyundai"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/hyundai.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Hyundai Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/hyundai"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/hyundai.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Hyundai Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/hyundai.svg"><span
               class="align-self-end">Hyundai</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/jaguar"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/jaguar.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Jaguar Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/jaguar"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/jaguar.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Jaguar Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/jaguar.svg"><span
               class="align-self-end">Jaguar</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/jeep"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/jeep.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Jeep Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/jeep"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/jeep.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Jeep Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/jeep.svg"><span
               class="align-self-end">Jeep</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/kia"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/kia.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="KIA Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/kia"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/kia.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="KIA Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/kia.svg"><span
               class="align-self-end">KIA</span></a></div>
       </div>
@@ -540,37 +578,32 @@
         <div class="card-badge_card-badge__1zyvQ"><a
             class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
             href="/car-leasing/land-rover"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/land-rover.svg"
-              width="55" height="55" class="img-fluid align-self-start ls-is-cached lazyloaded"
-              alt="Land Rover Car"
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/land-rover.svg" width="55"
+              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Land Rover Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/land-rover.svg"><span
               class="align-self-end">Land Rover</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/lexus"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/lexus.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Lexus Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/lexus"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/lexus.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Lexus Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/lexus.svg"><span
               class="align-self-end">Lexus</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/maserati"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/maserati.svg"
-              width="55" height="55" class="img-fluid align-self-start ls-is-cached lazyloaded"
-              alt="Maserati Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/maserati"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/maserati.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Maserati Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/maserati.svg"><span
               class="align-self-end">Maserati</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/mazda"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mazda.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Mazda Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/mazda"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mazda.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Mazda Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mazda.svg"><span
               class="align-self-end">Mazda</span></a></div>
       </div>
@@ -578,9 +611,8 @@
         <div class="card-badge_card-badge__1zyvQ"><a
             class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
             href="/car-leasing/mercedes-benz"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mercedes-benz.svg"
-              width="55" height="55" class="img-fluid align-self-start ls-is-cached lazyloaded"
-              alt="Mercedes-Benz Car"
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mercedes-benz.svg" width="55"
+              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Mercedes-Benz Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mercedes-benz.svg"><span
               class="align-self-end">Mercedes-Benz</span></a></div>
       </div>
@@ -588,18 +620,16 @@
         <div class="card-badge_card-badge__1zyvQ"><a
             class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
             href="/car-leasing/mg-motor-uk"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mg-motor-uk.svg"
-              width="55" height="55" class="img-fluid align-self-start ls-is-cached lazyloaded"
-              alt="MG Motor UK Car"
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mg-motor-uk.svg" width="55"
+              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="MG Motor UK Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mg-motor-uk.svg"><span
               class="align-self-end">MG Motor UK</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/mini"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mini.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Mini Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/mini"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mini.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Mini Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mini.svg"><span
               class="align-self-end">Mini</span></a></div>
       </div>
@@ -607,121 +637,106 @@
         <div class="card-badge_card-badge__1zyvQ"><a
             class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
             href="/car-leasing/mitsubishi"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mitsubishi.svg"
-              width="55" height="55" class="img-fluid align-self-start ls-is-cached lazyloaded"
-              alt="Mitsubishi Car"
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mitsubishi.svg" width="55"
+              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Mitsubishi Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/mitsubishi.svg"><span
               class="align-self-end">Mitsubishi</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/nissan"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/nissan.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Nissan Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/nissan"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/nissan.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Nissan Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/nissan.svg"><span
               class="align-self-end">Nissan</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/peugeot"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/peugeot.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Peugeot Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/peugeot"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/peugeot.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Peugeot Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/peugeot.svg"><span
               class="align-self-end">Peugeot</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/polestar"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/polestar.svg"
-              width="55" height="55" class="img-fluid align-self-start ls-is-cached lazyloaded"
-              alt="Polestar Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/polestar"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/polestar.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Polestar Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/polestar.svg"><span
               class="align-self-end">Polestar</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/porsche"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/porsche.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Porsche Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/porsche"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/porsche.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Porsche Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/porsche.svg"><span
               class="align-self-end">Porsche</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/renault"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/renault.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Renault Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/renault"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/renault.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Renault Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/renault.svg"><span
               class="align-self-end">Renault</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/seat"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/seat.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Seat Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/seat"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/seat.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Seat Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/seat.svg"><span
               class="align-self-end"><small class="badge badge-success">Best
                 Prices</small><br>Seat</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/skoda"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/skoda.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Skoda Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/skoda"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/skoda.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Skoda Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/skoda.svg"><span
               class="align-self-end"><small class="badge badge-success">Best
                 Prices</small><br>Skoda</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/smart"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/smart.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Smart Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/smart"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/smart.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Smart Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/smart.svg"><span
               class="align-self-end">Smart</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/suzuki"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/suzuki.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Suzuki Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/suzuki"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/suzuki.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Suzuki Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/suzuki.svg"><span
               class="align-self-end">Suzuki</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/tesla"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/tesla.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Tesla Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/tesla"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/tesla.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Tesla Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/tesla.svg"><span
               class="align-self-end">Tesla</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/toyota"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/toyota.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Toyota Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/toyota"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/toyota.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Toyota Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/toyota.svg"><span
               class="align-self-end">Toyota</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/vauxhall"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/vauxhall.svg"
-              width="55" height="55" class="img-fluid align-self-start ls-is-cached lazyloaded"
-              alt="Vauxhall Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/vauxhall"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/vauxhall.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Vauxhall Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/vauxhall.svg"><span
               class="align-self-end">Vauxhall</span></a></div>
       </div>
@@ -729,18 +744,16 @@
         <div class="card-badge_card-badge__1zyvQ"><a
             class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
             href="/car-leasing/volkswagen"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/volkswagen.svg"
-              width="55" height="55" class="img-fluid align-self-start ls-is-cached lazyloaded"
-              alt="Volkswagen Car"
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/volkswagen.svg" width="55"
+              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Volkswagen Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/volkswagen.svg"><span
               class="align-self-end">Volkswagen</span></a></div>
       </div>
       <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-0 pr-3 px-md-3">
         <div class="card-badge_card-badge__1zyvQ"><a
-            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none"
-            href="/car-leasing/volvo"><img
-              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/volvo.svg" width="55"
-              height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Volvo Car"
+            class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/volvo"><img
+              data-src="https://imagecdn.leasingoptions.co.uk/website/static/makes/volvo.svg" width="55" height="55"
+              class="img-fluid align-self-start ls-is-cached lazyloaded" alt="Volvo Car"
               src="https://imagecdn.leasingoptions.co.uk/website/static/makes/volvo.svg"><span
               class="align-self-end">Volvo</span></a></div>
       </div>
@@ -824,25 +837,22 @@
             work with leading car manufacturers and a number of finance companies, including: ALD automotive, ARVAL,
             Alphabet, Hitachi, Lex Autolease, LeasePlan and Santander to get you the best deal on your lease. We are a
             proud member of the BVRLA.</p>
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded" alt="ALD logo colour" 
-            src="./img/features/ald-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded" alt="Alphabet logo colour"
-            src="./img/features/alphabet-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded" alt="Arval logo colour"
-            src="./img/features/arval-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded" alt="BVRLA logo colour"
-            src="./img/features/bvrla-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded" alt="Hitachi logo colour"
-            src="./img/features/hitachi-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
-            alt="LeasePlan logo colour"
-            src="./img/features/leaseplan-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
-            alt="Lex Autolease logo colour"
-            src="./img/features/lex-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
-            alt="Santander logo colour"
-            src="./img/features/satander-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="ALD logo colour" src="./img/features/ald-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Alphabet logo colour" src="./img/features/alphabet-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Arval logo colour" src="./img/features/arval-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="BVRLA logo colour" src="./img/features/bvrla-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Hitachi logo colour" src="./img/features/hitachi-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="LeasePlan logo colour" src="./img/features/leaseplan-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Lex Autolease logo colour" src="./img/features/lex-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Santander logo colour" src="./img/features/satander-mono.webp">
         </div>
       </div>
       <div class="col-24 col-md-6 mb-3 mb-md-0 px-0 px-md-3 d-flex wow animated fadeInLeft delay-2">
@@ -853,31 +863,28 @@
             industry leaders and are willing to share our expertise with national and regional media to help educate
             people on all aspects of leasing. Here is a snapshot of some of the media outlets that we have been featured
             in recently.</p>
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded" alt="Autoevolution logo colour"
-            src="./img/features/autoevolution-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
-            alt="Autoblog logo colour"
-            src="./img/features/autoblog-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded" alt="BMWblog logo colour"
-            src="./img/features/bmwblog-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
-            alt="Car throttle logo colour"
-            src="./img/features/carthrottle-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
-            alt="Daily Express logo colour"
-            src="./img/features/dailyexpress-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
-            alt="Daily Record logo colour" 
-            src="./img/features/dailyrecord-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
-            alt="Car Scoops logo colour"
-            src="./img/features/carscoops-mono.webp">
-            <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
-            alt="Drive Tribe logo colour"
-            src="./img/features/drivetribe-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Autoevolution logo colour" src="./img/features/autoevolution-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Autoblog logo colour" src="./img/features/autoblog-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="BMWblog logo colour" src="./img/features/bmwblog-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Car throttle logo colour" src="./img/features/carthrottle-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Daily Express logo colour" src="./img/features/dailyexpress-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Daily Record logo colour" src="./img/features/dailyrecord-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Car Scoops logo colour" src="./img/features/carscoops-mono.webp">
+          <img width="100" height="43" class="footer_partner-hover__1OtgH img-fluid ls-is-cached lazyloaded"
+            alt="Drive Tribe logo colour" src="./img/features/drivetribe-mono.webp">
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="bg-modal hide" id="bg-modal">
   </div>
 
 
