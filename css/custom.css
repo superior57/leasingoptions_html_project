@@ -151,9 +151,6 @@ ul.top-links>li path {
 .classy-navbar .classynav > ul > li svg  {
     transition: 400ms;
 }
-.header-top.classy-navbar .classynav > ul > li:hover svg {
-    transform: rotate(-180deg);
-}
 .classynav ul li.cn-dropdown-item ul li {
     padding: 15px 20px;
     border-bottom: solid 1px #80808030;
@@ -469,23 +466,26 @@ ul.top-links>li path {
     z-index: 99;
     cursor: pointer;
 }
-.breakpoint-off .classynav.click-dropdown  ul li:hover .dropdown, 
-.breakpoint-off .classynav.click-dropdown  ul li:hover .megamenu {
+.breakpoint-off .classynav.click-dropdown  ul li:hover .dropdown {
     animation: unset !important;
     visibility: hidden;
+    opacity: 0;
 }
-.breakpoint-off .classynav.click-dropdown  ul li.active .dropdown, 
-.breakpoint-off .classynav.click-dropdown  ul li.active .megamenu {
+.breakpoint-off .classynav.click-dropdown  ul li.active>.dropdown{
     animation: unset !important;
     visibility: visible;
     opacity: 1;
     top: 100%;
+    border-right: solid 1px #80808030;
 }
 .breakpoint-off .classynav.click-dropdown>ul>li:hover {
     background-color: #575757;
 }
 .breakpoint-off .classynav.click-dropdown >ul>li.active {
     background-color: #575757;
+}
+.breakpoint-off .classynav.click-dropdown >ul>li.active>svg {
+    transform: rotate(-180deg);
 }
 .bg-modal {
     position: fixed;
@@ -497,4 +497,123 @@ ul.top-links>li path {
 }
 .bg-modal.hide {
     visibility: hidden;
+}
+.dropdown-submenu {
+    position: fixed;    
+    left: 0;
+    top: 120px;
+    padding: 0 70px;
+    background: transparent;
+    padding-left: 0;    
+    cursor: default;
+    transition: 0s;
+    /* width: calc(100% - 270px);
+    margin-left: 270px; */
+    opacity: 0;
+    visibility: hidden;
+}
+.cn-dropdown-item.active>ul.dropdown>li.active>.dropdown-submenu {
+    opacity: 1;
+    visibility: visible
+}; 
+
+.dropdown-submenu * {
+    transition: 0s;
+}
+.navigation-tab-title {
+    height: 50px;
+    max-height: 50px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-box-align: center;
+    -moz-box-pack: justify;
+    padding: 0 20px;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #333;
+    background: #FFF;
+
+}
+.navigation-tab-title button {
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding: 0;
+}
+.navigation-tab-body {
+    box-shadow: inset 0 -15px 20px 0 #d8d8d8;
+    background: #f8f8f8;
+    max-height: 70vh;
+    overflow: hidden;
+    overflow: auto;
+}
+.make-card {
+    width: 190px;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: inline-flex;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    line-height: normal;
+    color: inherit;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.make-card img {
+    max-height: 40px;
+    margin-right: 15px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: -moz-calc(1.428571429em + .75rem + 2px);
+    height: calc(1.428571429em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.428571429;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.budget-list a{
+    height: 50px !important;
+    display: flex;
+    text-align: center !important;
+    font-family: Roboto,sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    color: inherit !important;
+    border-bottom: 1px solid #e6e6e6 !important;
+    justify-content: center;
+}
+.budget-list a:hover {
+    text-decoration: underline !important;
+}
+.navigation_body-type-card__2un9b {
+    background-color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    color: inherit;
+    text-align: center;
+    padding: 1rem;
+    margin: .5rem;
+    width: 250px;
+    box-shadow: 1px 1px 3px #d4d4d4;
+    transition: 0;
+}
+.click-dropdown > ul > li.active > ul > li.active svg {
+    transform: rotate(-180deg);    
 }
