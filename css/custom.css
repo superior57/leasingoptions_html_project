@@ -617,3 +617,6 @@ ul.top-links>li path {
 .click-dropdown > ul > li.active > ul > li.active svg {
     transform: rotate(-180deg);    
 }
+.header-top div.classynav > ul > li.cn-dropdown-item:hover svg{
+    transform: rotate(-180deg);
+}
