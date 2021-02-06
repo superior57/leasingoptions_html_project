@@ -30,56 +30,89 @@
   </div>
   <!-- Header Area-->
   <header class="header-area breakpoint-off" id="appNav">
-    <div class="header-top container-fluid classy-navbar ">
+    <div class="header-top container-fluid classy-navbar px-xl-5 px-3">
       <div class="w-100 py-3 d-flex align-items-center justify-content-between">
-        <div class="logo mr-15">
+        <div class="w-sm-100 logo mr-15">
           <a href="/"><img src="./img/core-img/leasing-options-logo.svg" width="230" alt=""></a>
         </div>
-        <div class="switch-businesstype d-flex mr-15">
-          <span>Business</span>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-          <span>Persoanl</span>
+        <div class="w-100 d-none justify-content-between align-items-center d-xl-flex">
+          <div class="switch-businesstype d-flex mr-15">
+            <span>Business</span>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>Persoanl</span>
+          </div>
+          <div class="search-input d-flex align-items-center">
+            <span><i class="fa fa-search px-2"></i></span>
+            <input type="searcb" placeholder="e.g. BMW 3 Series" class="form-control">
+          </div>
+          <div class="classynav">
+            <ul class="d-flex top-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Guides</a></li>
+              <li>
+                <a href="#">span</a>
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-down"
+                  class="svg-inline--fa fa-chevron-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512" width="20" height="20">
+                  <path fill="currentColor"
+                    d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z">
+                  </path>
+                </svg>
+                <ul class="dropdown">
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Gap Insurance</a></li>
+                  <li><a href="#">Tax Calcuator</a></li>
+                  <li><a href="#">Fair Wear And Tear</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="public-phone">
+            <a href="#">0161 826 9716</a>
+          </div>
         </div>
-        <div class="search-input d-flex align-items-center">
-          <span><i class="fa fa-search px-2"></i></span>
-          <input type="searcb" placeholder="e.g. BMW 3 Series" class="form-control">
-        </div>
-        <div class="classynav">
-          <ul class="d-flex top-links">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Guides</a></li>
-            <li>
-              <a href="#">span</a>
-              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-down"
-                class="svg-inline--fa fa-chevron-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512" width="20" height="20">
-                <path fill="currentColor"
-                  d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z">
-                </path>
-              </svg>
-              <ul class="dropdown">
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Gap Insurance</a></li>
-                <li><a href="#">Tax Calcuator</a></li>
-                <li><a href="#">Fair Wear And Tear</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="public-phone">
-          <a href="#">0161 826 9716</a>
+        <div class="w-100 d-inline-flex justify-content-end align-items-center d-xl-none">
+          <ul class="header_head-bar__ql__3bV0x list-inline">
+            <li class="list-inline-item"><a aria-label="Contact"><svg aria-hidden="true" focusable="false"
+                  data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
+                  <path fill="currentColor"
+                    d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z">
+                  </path>
+                </svg></a></li>
+            <li class="list-inline-item"><a href="tel:0161 826 9716"><svg aria-hidden="true" focusable="false"
+                  data-prefix="far" data-icon="phone-alt" class="svg-inline--fa fa-phone-alt fa-w-16 " role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22">
+                  <path fill="currentColor"
+                    d="M484.25 330l-101.59-43.55a45.86 45.86 0 0 0-53.39 13.1l-32.7 40a311.08 311.08 0 0 1-124.19-124.12l40-32.7a45.91 45.91 0 0 0 13.1-53.42L182 27.79a45.63 45.63 0 0 0-52.31-26.61L35.5 22.89A45.59 45.59 0 0 0 0 67.5C0 313.76 199.68 512.1 444.56 512a45.58 45.58 0 0 0 44.59-35.51l21.7-94.22a45.75 45.75 0 0 0-26.6-52.27zm-41.59 134.09C225.08 463.09 49 287 48 69.3l90.69-20.9 42.09 98.22-68.09 55.71c46.39 99 98.19 150.63 197 197l55.69-68.11 98.19 42.11z">
+                  </path>
+                </svg></a></li>
+            <li class="list-inline-item"><a aria-label="Search"><svg aria-hidden="true" focusable="false"
+                  data-prefix="far" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22">
+                  <path fill="currentColor"
+                    d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z">
+                  </path>
+                </svg></a></li>
+          </ul><a id="header_head-bar__toggle__26kLa"><span>Menu</span><svg aria-hidden="true" focusable="false"
+              data-prefix="far" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="25">
+              <path fill="currentColor"
+                d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z">
+              </path>
+            </svg></a>
         </div>
       </div>
     </div>
-    <div class="header-bottom container-fluid classy-navbar ">
+    <div class="header-bottom container-fluid classy-navbar px-xl-5 px-3">
       <div class="w-100 d-flex align-items-center justify-content-between">
-        <div class="classynav click-dropdown">
+        <div class="classynav click-dropdown d-none d-xl-flex">
           <ul class="d-flex top-links">
             <li class="">
               <a>
@@ -520,62 +553,81 @@
                       <button class="btn btn-submenu-close" type="button">×</button>
                     </div>
                     <div class="navigation-tab-body px-3 py-2 d-flex flex-wrap">
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="suv / crossover" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-suv.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">SUV / Crossover</span> 
-                            <span class="navigation_description__3GFwS">e.g.Jeep Cherokee SW, Land Rover Discovery SW</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="hatchback" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-hatchback.png" width="200" height="80" class="lazyload">
-                            <span class="navigation_name__2Dks-">Hatchback</span> 
-                            <span class="navigation_description__3GFwS">e.g.Toyota Aygo, Vauxhall Astra</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="saloon" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-saloon.png" width="200" height="80"  class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Saloon</span> 
-                            <span class="navigation_description__3GFwS">e.g.Alfa Romeo Giulia, Ford Mondeo</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="estate" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-estate.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Estate</span> 
-                            <span class="navigation_description__3GFwS">e.g.Hyundai i30 Tourer, Kia Ceed Sportswagon</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="coupe" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-coupe.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Coupe</span> 
-                            <span class="navigation_description__3GFwS">e.g.Audi A5, BMW 2 Series</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="convertible / cabriolet" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-convertible.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Convertible / Cabriolet</span> 
-                            <span class="navigation_description__3GFwS">e.g.Mercedes C Class, Smart ForTwo</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="mpv" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-mpv.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">MPV</span>
-                            <span class="navigation_description__3GFwS">e.g.Renault Grand Scenic, Volkswagon Touran</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="sports car" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-sportscar.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Sports Car</span> 
-                            <span class="navigation_description__3GFwS">e.g.Abarth 124 Spider Roadster, Audi R8 Coupe</span>
-                          </span>
-                        </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="suv / crossover"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-suv.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">SUV / Crossover</span>
+                          <span class="navigation_description__3GFwS">e.g.Jeep Cherokee SW, Land Rover Discovery
+                            SW</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="hatchback"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-hatchback.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Hatchback</span>
+                          <span class="navigation_description__3GFwS">e.g.Toyota Aygo, Vauxhall Astra</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="saloon"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-saloon.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Saloon</span>
+                          <span class="navigation_description__3GFwS">e.g.Alfa Romeo Giulia, Ford Mondeo</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="estate"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-estate.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Estate</span>
+                          <span class="navigation_description__3GFwS">e.g.Hyundai i30 Tourer, Kia Ceed
+                            Sportswagon</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="coupe"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-coupe.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Coupe</span>
+                          <span class="navigation_description__3GFwS">e.g.Audi A5, BMW 2 Series</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="convertible / cabriolet"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-convertible.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Convertible / Cabriolet</span>
+                          <span class="navigation_description__3GFwS">e.g.Mercedes C Class, Smart ForTwo</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="mpv"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-mpv.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">MPV</span>
+                          <span class="navigation_description__3GFwS">e.g.Renault Grand Scenic, Volkswagon Touran</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="sports car"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-sportscar.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Sports Car</span>
+                          <span class="navigation_description__3GFwS">e.g.Abarth 124 Spider Roadster, Audi R8
+                            Coupe</span>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -585,10 +637,10 @@
               </ul>
             </li>
             <li>
-              <a href="#"><span>Business Car Leasing</span></a>
-              <svg aria-hidden="true" focusable="false"
-                data-prefix="far" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 " role="img"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
+              <a><span>Business Car Leasing</span></a>
+              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-down"
+                class="svg-inline--fa fa-chevron-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512" width="20" height="20">
                 <path fill="currentColor"
                   d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z">
                 </path>
@@ -1021,62 +1073,81 @@
                       <button class="btn btn-submenu-close" type="button">×</button>
                     </div>
                     <div class="navigation-tab-body px-3 py-2 d-flex flex-wrap">
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="suv / crossover" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-suv.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">SUV / Crossover</span> 
-                            <span class="navigation_description__3GFwS">e.g.Jeep Cherokee SW, Land Rover Discovery SW</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="hatchback" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-hatchback.png" width="200" height="80" class="lazyload">
-                            <span class="navigation_name__2Dks-">Hatchback</span> 
-                            <span class="navigation_description__3GFwS">e.g.Toyota Aygo, Vauxhall Astra</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="saloon" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-saloon.png" width="200" height="80"  class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Saloon</span> 
-                            <span class="navigation_description__3GFwS">e.g.Alfa Romeo Giulia, Ford Mondeo</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="estate" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-estate.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Estate</span> 
-                            <span class="navigation_description__3GFwS">e.g.Hyundai i30 Tourer, Kia Ceed Sportswagon</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="coupe" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-coupe.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Coupe</span> 
-                            <span class="navigation_description__3GFwS">e.g.Audi A5, BMW 2 Series</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="convertible / cabriolet" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-convertible.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Convertible / Cabriolet</span> 
-                            <span class="navigation_description__3GFwS">e.g.Mercedes C Class, Smart ForTwo</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="mpv" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-mpv.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">MPV</span>
-                            <span class="navigation_description__3GFwS">e.g.Renault Grand Scenic, Volkswagon Touran</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="sports car" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-sportscar.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Sports Car</span> 
-                            <span class="navigation_description__3GFwS">e.g.Abarth 124 Spider Roadster, Audi R8 Coupe</span>
-                          </span>
-                        </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="suv / crossover"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-suv.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">SUV / Crossover</span>
+                          <span class="navigation_description__3GFwS">e.g.Jeep Cherokee SW, Land Rover Discovery
+                            SW</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="hatchback"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-hatchback.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Hatchback</span>
+                          <span class="navigation_description__3GFwS">e.g.Toyota Aygo, Vauxhall Astra</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="saloon"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-saloon.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Saloon</span>
+                          <span class="navigation_description__3GFwS">e.g.Alfa Romeo Giulia, Ford Mondeo</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="estate"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-estate.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Estate</span>
+                          <span class="navigation_description__3GFwS">e.g.Hyundai i30 Tourer, Kia Ceed
+                            Sportswagon</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="coupe"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-coupe.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Coupe</span>
+                          <span class="navigation_description__3GFwS">e.g.Audi A5, BMW 2 Series</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="convertible / cabriolet"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-convertible.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Convertible / Cabriolet</span>
+                          <span class="navigation_description__3GFwS">e.g.Mercedes C Class, Smart ForTwo</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="mpv"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-mpv.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">MPV</span>
+                          <span class="navigation_description__3GFwS">e.g.Renault Grand Scenic, Volkswagon Touran</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="sports car"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-sportscar.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Sports Car</span>
+                          <span class="navigation_description__3GFwS">e.g.Abarth 124 Spider Roadster, Audi R8
+                            Coupe</span>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -1086,7 +1157,7 @@
               </ul>
             </li>
             <li>
-              <a href="#"><span>Van Leasing</span></a> <svg aria-hidden="true" focusable="false" data-prefix="far"
+              <a><span>Van Leasing</span></a> <svg aria-hidden="true" focusable="false" data-prefix="far"
                 data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 " role="img"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
                 <path fill="currentColor"
@@ -1094,7 +1165,7 @@
                 </path>
               </svg>
               <ul class="dropdown">
-                <li><a href="#">Car Leasing </a></li>
+                <li><a>Car Leasing </a></li>
                 <li>
                   <a>Manufacturer</a>
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
@@ -1521,62 +1592,81 @@
                       <button class="btn btn-submenu-close" type="button">×</button>
                     </div>
                     <div class="navigation-tab-body px-3 py-2 d-flex flex-wrap">
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="suv / crossover" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-suv.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">SUV / Crossover</span> 
-                            <span class="navigation_description__3GFwS">e.g.Jeep Cherokee SW, Land Rover Discovery SW</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="hatchback" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-hatchback.png" width="200" height="80" class="lazyload">
-                            <span class="navigation_name__2Dks-">Hatchback</span> 
-                            <span class="navigation_description__3GFwS">e.g.Toyota Aygo, Vauxhall Astra</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="saloon" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-saloon.png" width="200" height="80"  class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Saloon</span> 
-                            <span class="navigation_description__3GFwS">e.g.Alfa Romeo Giulia, Ford Mondeo</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="estate" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-estate.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Estate</span> 
-                            <span class="navigation_description__3GFwS">e.g.Hyundai i30 Tourer, Kia Ceed Sportswagon</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="coupe" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-coupe.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Coupe</span> 
-                            <span class="navigation_description__3GFwS">e.g.Audi A5, BMW 2 Series</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="convertible / cabriolet" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-convertible.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Convertible / Cabriolet</span> 
-                            <span class="navigation_description__3GFwS">e.g.Mercedes C Class, Smart ForTwo</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="mpv" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-mpv.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">MPV</span>
-                            <span class="navigation_description__3GFwS">e.g.Renault Grand Scenic, Volkswagon Touran</span>
-                          </span>
-                        </a>
-                        <a class="text-decoration-none" href="">
-                          <span class="navigation_body-type-card__2un9b">
-                            <img alt="sports car" src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-sportscar.png" width="200" height="80" class="lazyload"> 
-                            <span class="navigation_name__2Dks-">Sports Car</span> 
-                            <span class="navigation_description__3GFwS">e.g.Abarth 124 Spider Roadster, Audi R8 Coupe</span>
-                          </span>
-                        </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="suv / crossover"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-suv.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">SUV / Crossover</span>
+                          <span class="navigation_description__3GFwS">e.g.Jeep Cherokee SW, Land Rover Discovery
+                            SW</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="hatchback"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-hatchback.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Hatchback</span>
+                          <span class="navigation_description__3GFwS">e.g.Toyota Aygo, Vauxhall Astra</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="saloon"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-saloon.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Saloon</span>
+                          <span class="navigation_description__3GFwS">e.g.Alfa Romeo Giulia, Ford Mondeo</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="estate"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-estate.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Estate</span>
+                          <span class="navigation_description__3GFwS">e.g.Hyundai i30 Tourer, Kia Ceed
+                            Sportswagon</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="coupe"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-coupe.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Coupe</span>
+                          <span class="navigation_description__3GFwS">e.g.Audi A5, BMW 2 Series</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="convertible / cabriolet"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-convertible.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Convertible / Cabriolet</span>
+                          <span class="navigation_description__3GFwS">e.g.Mercedes C Class, Smart ForTwo</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="mpv"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-mpv.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">MPV</span>
+                          <span class="navigation_description__3GFwS">e.g.Renault Grand Scenic, Volkswagon Touran</span>
+                        </span>
+                      </a>
+                      <a class="text-decoration-none" href="">
+                        <span class="navigation_body-type-card__2un9b">
+                          <img alt="sports car"
+                            src="https://imagecdn.leasingoptions.co.uk/website/static/vehicle-images/panel-sportscar.png"
+                            width="200" height="80" class="lazyload">
+                          <span class="navigation_name__2Dks-">Sports Car</span>
+                          <span class="navigation_description__3GFwS">e.g.Abarth 124 Spider Roadster, Audi R8
+                            Coupe</span>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -1586,7 +1676,7 @@
               </ul>
             </li>
             <li>
-              <a href="#"><span>Special Offers</span></a> <svg aria-hidden="true" focusable="false" data-prefix="far"
+              <a><span>Special Offers</span></a> <svg aria-hidden="true" focusable="false" data-prefix="far"
                 data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 " role="img"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20">
                 <path fill="currentColor"
@@ -1612,6 +1702,14 @@
             <li><a href="/">My Garage</a></li>
           </ul>
         </div>
+        <div class="d-flex d-xl-none">
+          <div class="trust-score_trust-score position-relative">
+            <img class="img-fluid lazyloaded" alt="Trustpilot logo" src="https://imagecdn.leasingoptions.co.uk/website/static/trustpilot-logo-score.svg" width="60" height="20">
+          </div>
+          <div class="bg-white reviews-item">6,757
+            <!-- -->k reviews
+          </div>
+        </div>
         <div class="public-phone">
           <button class="btn btn-primary">Search for a Car</button>
         </div>
@@ -1621,7 +1719,7 @@
   <!-- Header Area-->
 
   <!-- hero section -->
-  <section class="hero-section p-5">
+  <section class="hero-section p-3 p-xl-5">
     <div class="row">
       <div class="col-24 py-md-5">
         <h1 class="text-white wow animated fadeInLeft">
@@ -1632,15 +1730,15 @@
           the best deals on the latest cars and vans from trusted manufacturers – with an unbeatable 5 star
           service.<br><br>Browse our affordable deals now or let us help find your perfect vehicle below.</h2>
         <button
-          class="btn btn-primary btn-lg btn-fluid-xs mb-3 mb-md-5 mr-sm-3 mr-15 wow animated fadeInLeft delay-3">Search
+          class="w-sm-100 btn btn-primary btn-lg btn-fluid-xs mb-3 mb-md-5 mr-sm-3 mr-15 wow animated fadeInLeft delay-3">Search
           for a Car</button>
-        <a class="btn btn-secondary btn-lg btn-fluid-xs mb-3 mb-md-5 wow animated fadeInRight delay-4" role="button"
+        <a class="w-sm-100 btn btn-secondary btn-lg btn-fluid-xs mb-3 mb-md-5 wow animated fadeInRight delay-4" role="button"
           href="/car-leasing-deals">View
           Special Offers</a>
 
         <div class="trust-mini_trust-mini__Q0ovD ">
           <a href="#" target="_blank">
-            <img width="145" height="50" class="img-fluid ls-is-cached  lazyloaded" alt="Trustpilot logo"
+            <img width="235" height="82" class="img-fluid ls-is-cached  lazyloaded" alt="Trustpilot logo"
               src="./img/core-img/trustpilot-wstars.svg"><br><span>TrustScore</span>
             <strong>4.9 | 6,757</strong> <span>reviews</span></a>
         </div>
@@ -2405,7 +2503,7 @@
         <div class="col-6 col-md-3 footer_footer__col__3K4Bu d-flex flex-column mb-3 mb-md-5">
           <h2 class="mb-3">Quick Links</h2>
           <ul>
-            <li><a href="#">Personal Car Leasing</a></li>
+            <li><a href="">Personal Car Leasing</a></li>
             <li><a href="#">Van Leasing</a></li>
             <li><a href="#">Business Car Leasing</a></li>
             <li><a href="#">Car Leasing Special Offers</a></li>
