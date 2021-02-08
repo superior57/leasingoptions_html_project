@@ -42,18 +42,18 @@
         } else {            
             $('.click-dropdown>ul>li li').removeClass('active');
             let navbar_li_text = $(">a>span", $(e.target).closest('li').parent().parent()).text();
-            let m_value = 270;
+            let m_value = 248;
             console.log($('.dropdown-submenu', $(e.target).closest('li'))[0]);
             switch(navbar_li_text) {
                 case "Personal Car Leasing" : break;
                 case "Business Car Leasing" : 
-                    m_value = 458; break;
+                    m_value = 436; break;
                 case "Van Leasing" : 
-                    m_value = 649; break;
+                    m_value = 627; break;
                 case "Special Offers" :
-                    m_value = 776; break;
+                    m_value = 754; break;
                 default:
-                    m_value = 270;                    
+                    m_value = 248;                    
             }
             $('.dropdown-submenu', $(e.target).closest('li')).css('margin-left', `${m_value}px`);
             $(e.target).closest('li').addClass('active');        
