@@ -10,6 +10,121 @@
         $('#appNav').classyNav();
     }
 
+    // :: Gallery Menu Style Code
+    $('.portfolio-menu button.btn').on('click', function () {
+        $('.portfolio-menu button.btn').removeClass('active');
+        $(this).addClass('active');
+    })
+
+    // :: Magnific Popup Active Code
+    if ($.fn.magnificPopup) {
+        $('.video-play-btn').magnificPopup({
+            type: 'iframe'
+        });
+    }
+
+    if ($.fn.magnificPopup) {
+        $('.image-popup').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+            removalDelay: 500,
+            mainClass: 'mfp-fade',
+            preloader: true,
+            callbacks: {
+                beforeOpen: function () {
+                    this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+                    this.st.mainClass = this.st.el.attr('data-effect');
+                }
+            },
+            closeOnContentClick: true,
+            midClick: true
+        });
+    }
+
+    // :: Tooltip Active Code
+    if ($.fn.tooltip) {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+
+    // :: WOW Active Code
+    if (app.width() > 480) {
+        new WOW().init();
+    }
+
+    // :: Jarallax Active Code
+    if ($.fn.jarallax) {
+        $('.jarallax').jarallax({
+            speed: 0.5
+        });
+    }
+
+    // :: Scrollup Active Code
+    if ($.fn.scrollUp) {
+        app.scrollUp({
+            scrollSpeed: 1100,
+            scrollText: '<i class="lni-chevron-up"></i>'
+        });
+    }
+
+    // :: Counter Up Active Code
+    if ($.fn.counterUp) {
+        $('.rs-counter').counterUp({
+            delay: 15,
+            time: 1500
+        });
+    }
+
+    // :: Prevent Default 'a' Click
+    $('a[href="#"]').on('click', function ($) {
+        $.preventDefault();
+    });
+
+    // :: Service Active Code
+    $('.service-card').on('mouseenter', function () {
+        $('.service-card').removeClass('active');
+        $(this).addClass('active');
+    })
+
+    // :: Animated Headline Active Code
+    if ($.fn.animatedHeadline) {
+        $('.animated--headline').animatedHeadline({
+            animationType: 'clip'
+        });
+    }
+
+    // :: Password Strength Active Code
+    if ($.fn.passwordStrength) {
+        $('#registerPassword').passwordStrength({
+            minimumChars: 8
+        });
+    }
+
+    // :: Password Hide Show Active Code
+    var inputPassword = $('.input-psswd');
+    $('.label-psswd').on('click', function () {
+        if (inputPassword.attr('psswd-shown') == 'false') {
+            inputPassword.removeAttr('type');
+            inputPassword.attr('type', 'text');
+            inputPassword.removeAttr('psswd-shown');
+            inputPassword.attr('psswd-shown', 'true');
+        } else {
+            inputPassword.removeAttr('type');
+            inputPassword.attr('type', 'password');
+            inputPassword.removeAttr('psswd-shown');
+            inputPassword.attr('psswd-shown', 'false');
+        }
+        $(this).toggleClass("active");
+    });
+    
+    // :: Countdown Active Code
+    if ($.fn.countdown) {
+        $('#csClock').countdown('2022/05/31', function (event) {
+            $(this).html(event.strftime('<div>%D <span>Day</span></div> <div>%H <span>Hour</span></div> <div>%M <span>Min</span></div> <div>%S <span>Sec</span></div>'));
+        });
+    }
+
     /**
      * when click background of modal
      */
