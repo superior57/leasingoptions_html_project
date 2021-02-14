@@ -7,7 +7,7 @@ getTopVehiclesAPI((res) => {
     console.log(data[0]);
     data?.map((d, i) => {
         el_topvehicles.append(`
-        <div class="col-sm-4 col-md-4 col-xl-3">
+        <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="card-shop wow animated fadeInUp delay-${i}">
             <div class="card-shop-header">
                 <div class="">
