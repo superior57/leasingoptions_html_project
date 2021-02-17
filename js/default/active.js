@@ -203,6 +203,23 @@ import { GetDealTypeUrl } from "../helpers/urlHelper.js";
             setModelList($(e.target).closest('.navigation-tab-body'), res.data);
         });
     })
+
+    if( document.getElementById('make-list') ) {
+        let make_list = $('#make-list');
+        let makes = GetStaticMakes(1);
+        make_list.empty();
+        makes?.map((m, i) => {
+            make_list.append(`
+            <div class="col-6 col-sm-4 col-md-2 col-lg-1 d-flex px-3">
+                <div class="card-badge_card-badge__1zyvQ"><a
+                    class="w-100 d-flex flex-wrap justify-content-center text-decoration-none" href="/car-leasing/abarth">
+                    <img height="55" class="img-fluid align-self-start ls-is-cached lazyloaded" alt="${m.text}"
+                    src="${getImageURL(`website/static/makes/${m.id}.svg`)}"><span
+                    class="align-self-end">${m.text}</span></a></div>
+            </div>
+            `)
+        });
+    }
 })(jQuery);
 
 // nav for mobile
