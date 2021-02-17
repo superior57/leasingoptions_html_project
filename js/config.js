@@ -15,7 +15,8 @@ const fetchHeaders = {
 }
 const currencySymbol = "£";
 const state = {
-    is_displaied_model_makes: false
+    is_displaied_model_makes: false,
+    leasing_deal_type: 0,
 };
 
 // functions

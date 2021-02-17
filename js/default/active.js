@@ -155,7 +155,6 @@ import { GetDealTypeUrl } from "../helpers/urlHelper.js";
         if( $(e.target).hasClass('btn-submenu-close') )
             return
         if ($(e.target).closest('li').hasClass('cn-dropdown-item')) {
-
             if ( $('.click-dropdown>ul>li.active')[0] == $(e.target).closest('li')[0] ) {
                 $(e.target).closest('li').toggleClass('active')
             } else {
@@ -163,6 +162,7 @@ import { GetDealTypeUrl } from "../helpers/urlHelper.js";
                 $(e.target).closest('li').addClass('active');        
             }
             $('.bg-modal').removeClass('hide');
+            state.leasing_deal_type = $(e.target).closest('li').attr('data-leasing-type');
             console.log('clicked nav li');
         } else {
             if ( $('.click-dropdown>ul>li li.active')[0] == e.target ) {
@@ -191,6 +191,7 @@ import { GetDealTypeUrl } from "../helpers/urlHelper.js";
                 case "Manufacturer" : displayMakes($(e.target).closest('li')); break;
                 case "Model" : displayModelMakes($(e.target).closest('li')); break;
                 case "Budget" : displayBudgets($(e.target).closest('li')); break;
+                case "Body" : displayBodies($(e.target).closest('li')); break;
             }
             console.log('clicked nav- dropdown li');
         }        
@@ -265,8 +266,144 @@ const displayBudgets = ( li_nav ) => {
     let budgets = GetStaticBudgets();
     budgets?.map((b, i) => {
         el_budgets.append(`
-            <a href="${ GetDealTypeUrl(2, `/${b.type}/150`) }">${b.text}</a>
+            <a href="${ GetDealTypeUrl(state.leasing_deal_type, `/${b.type}/150`) }">${b.text}</a>
         `)
     })
+}
 
+const displayBodies = ( li_nav ) => {
+    let el_bodies = $('.navigation-tab-body', li_nav);
+    el_bodies.empty();
+
+    if( state.leasing_deal_type == 3 ) {
+        el_bodies.append(`
+        <a class="text-decoration-none" href="/van-leasing/body-type/small">
+            <span class="navigation_body-type-card__2un9b">
+                <img alt="Small" width="200" height="80" class=" lazyloaded"  src="${getImageURL(`website/static/vehicle-images/panel-small-van.png`)}">
+                <span class="navigation_name__2Dks-">Small</span>
+                <span class="navigation_description__3GFwS">e.g. Ford Connect, Peugeot Partner</span>
+            </span>
+        </a>
+        <a class="text-decoration-none" href="/van-leasing/body-type/medium">
+            <span class="navigation_body-type-card__2un9b">
+                <img alt="Medium" width="200" height="80" class=" lazyloaded" src="${getImageURL(`website/static/vehicle-images/panel-medium-van.png`)}">
+                <span class="navigation_name__2Dks-">Medium</span> 
+                <span class="navigation_description__3GFwS">e.g. Citroen Dispatch, VW Transporter</span>
+            </span>
+        </a>        
+        <a class="text-decoration-none" href="/van-leasing/body-type/large">
+            <span class="navigation_body-type-card__2un9b">
+                <img alt="Large" width="200" height="80" class=" lazyloaded" src="${getImageURL(`website/static/vehicle-images/panel-large-van.png`)}">
+                <span class="navigation_name__2Dks-">Large</span> 
+                <span class="navigation_description__3GFwS">e.g. Peugeot Boxer, Citroen Relay</span>
+            </span>
+        </a>            
+        <a class="text-decoration-none" href="/van-leasing/body-type/pickup">
+            <span class="navigation_body-type-card__2un9b">
+                <img alt="Pickup" width="200" height="80" class=" lazyloaded" src="${getImageURL(`website/static/vehicle-images/panel-pickup.png`)}">
+                <span class="navigation_name__2Dks-">Pickup</span> 
+                <span class="navigation_description__3GFwS">e.g. Mitsubish L200, Ford Ranger</span>
+            </span>
+        </a>
+        <a class="text-decoration-none" href="/van-leasing/body-type/crew">
+            <span class="navigation_body-type-card__2un9b">
+                <img alt="Crew" width="200" height="80" class=" lazyloaded" src="${getImageURL(`website/static/vehicle-images/panel-crew-van.png`)}">
+                <span class="navigation_name__2Dks-">Crew</span> 
+                <span class="navigation_description__3GFwS">e.g. VW Transporter, Ford Transit Custom</span>
+            </span>
+        </a>
+        <a class="text-decoration-none" href="/van-leasing/body-type/dropside">
+            <span class="navigation_body-type-card__2un9b">
+                <img alt="Dropside" width="200" height="80" class=" lazyloaded" src="${getImageURL(`website/static/vehicle-images/panel-dropside.png`)}">
+                <span class="navigation_name__2Dks-">Dropside</span> 
+                <span class="navigation_description__3GFwS">e.g. Ford Transit, VW Crafter</span>
+            </span>
+        </a>            
+        <a class="text-decoration-none" href="/van-leasing/body-type/luton">
+            <span class="navigation_body-type-card__2un9b">
+                <img alt="Luton" width="200" height="80" class=" lazyloaded" src="${getImageURL(`website/static/vehicle-images/panel-luton-van.png`)}">
+                <span class="navigation_name__2Dks-">Luton</span> 
+                <span class="navigation_description__3GFwS">e.g. Mercedes-Benz Sprinter, Ford Transit</span>
+            </span>
+        </a>
+        `)
+    } else {
+        el_bodies.append(`
+            <a class="text-decoration-none" href="">
+                <span class="navigation_body-type-card__2un9b">
+                <img alt="suv / crossover"
+                    src="${getImageURL(`website/static/vehicle-images/panel-suv.png`)}"
+                    width="200" height="80" class="lazyload">
+                <span class="navigation_name__2Dks-">SUV / Crossover</span>
+                <span class="navigation_description__3GFwS">e.g.Jeep Cherokee SW, Land Rover Discovery
+                    SW</span>
+                </span>
+            </a>
+            <a class="text-decoration-none" href="">
+                <span class="navigation_body-type-card__2un9b">
+                <img alt="hatchback"
+                    src="${getImageURL(`website/static/vehicle-images/panel-hatchback.png`)}"
+                    width="200" height="80" class="lazyload">
+                <span class="navigation_name__2Dks-">Hatchback</span>
+                <span class="navigation_description__3GFwS">e.g.Toyota Aygo, Vauxhall Astra</span>
+                </span>
+            </a>
+            <a class="text-decoration-none" href="">
+                <span class="navigation_body-type-card__2un9b">
+                <img alt="saloon"
+                    src="${getImageURL(`website/static/vehicle-images/panel-saloon.png`)}"
+                    width="200" height="80" class="lazyload">
+                <span class="navigation_name__2Dks-">Saloon</span>
+                <span class="navigation_description__3GFwS">e.g.Alfa Romeo Giulia, Ford Mondeo</span>
+                </span>
+            </a>
+            <a class="text-decoration-none" href="">
+                <span class="navigation_body-type-card__2un9b">
+                <img alt="estate"
+                    src="${getImageURL(`website/static/vehicle-images/panel-estate.png`)}"
+                    width="200" height="80" class="lazyload">
+                <span class="navigation_name__2Dks-">Estate</span>
+                <span class="navigation_description__3GFwS">e.g.Hyundai i30 Tourer, Kia Ceed
+                    Sportswagon</span>
+                </span>
+            </a>
+            <a class="text-decoration-none" href="">
+                <span class="navigation_body-type-card__2un9b">
+                <img alt="coupe"
+                    src="${getImageURL(`website/static/vehicle-images/panel-coupe.png`)}"
+                    width="200" height="80" class="lazyload">
+                <span class="navigation_name__2Dks-">Coupe</span>
+                <span class="navigation_description__3GFwS">e.g.Audi A5, BMW 2 Series</span>
+                </span>
+            </a>
+            <a class="text-decoration-none" href="">
+                <span class="navigation_body-type-card__2un9b">
+                <img alt="convertible / cabriolet"
+                    src="${getImageURL(`website/static/vehicle-images/panel-convertible.png`)}"
+                    width="200" height="80" class="lazyload">
+                <span class="navigation_name__2Dks-">Convertible / Cabriolet</span>
+                <span class="navigation_description__3GFwS">e.g.Mercedes C Class, Smart ForTwo</span>
+                </span>
+            </a>
+            <a class="text-decoration-none" href="">
+                <span class="navigation_body-type-card__2un9b">
+                <img alt="mpv"
+                    src="${getImageURL(`website/static/vehicle-images/panel-mpv.png`)}"
+                    width="200" height="80" class="lazyload">
+                <span class="navigation_name__2Dks-">MPV</span>
+                <span class="navigation_description__3GFwS">e.g.Renault Grand Scenic, Volkswagon Touran</span>
+                </span>
+            </a>
+            <a class="text-decoration-none" href="">
+                <span class="navigation_body-type-card__2un9b">
+                <img alt="sports car"
+                    src="${getImageURL(`website/static/vehicle-images/panel-sportscar.png`)}"
+                    width="200" height="80" class="lazyload">
+                <span class="navigation_name__2Dks-">Sports Car</span>
+                <span class="navigation_description__3GFwS">e.g.Abarth 124 Spider Roadster, Audi R8
+                    Coupe</span>
+                </span>
+            </a>
+        `)
+    }
 }
