@@ -13,7 +13,10 @@ const fetchHeaders = {
         'LO-ORIGINAL-HOSTNAME': 'localhost:3000'
     }
 }
-const currencySymbol = "£"
+const currencySymbol = "£";
+const state = {
+    is_displaied_model_makes: false
+};
 
 // functions
 const getImageURL = (image) => {

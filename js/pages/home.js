@@ -1,10 +1,16 @@
 
+import {getTopVehiclesAPI} from "./../API/VehicleAPI.js";
+
+
+// Navbar
+// let manufacturers = GetStaticMakes(1);
+// console.log(manufacturers);
 
 // displaying topvehicle data
 getTopVehiclesAPI((res) => {
     const el_topvehicles = $('#topvehicles');
     const data = res.data;
-    console.log(data[0]);
+    // console.log(data[0]);
     data?.map((d, i) => {
         el_topvehicles.append(`
         <div class="col-sm-6 col-md-4 col-xl-3">
