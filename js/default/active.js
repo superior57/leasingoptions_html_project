@@ -1,3 +1,7 @@
+import { GetStaticMakes, GetStaticBudgets } from "../business-logic/vehicleService.js";
+import { GetModelsAPI } from "../API/VehicleAPI.js";
+import { GetDealTypeUrl } from "../helpers/urlHelper";
+
 (function ($) {
     'use strict';
     var app = $(window);
@@ -134,8 +138,7 @@
         console.log('clicked background of modal');
     });
     $('.btn-submenu-close').click(function(){
-        $('li').removeClass('active');
-        $('.bg-modal').addClass('hide');
+        $('.cn-dropdown-item.active>ul>li').removeClass('active');
     });
     $('.dropdown-submenu').click(function(e) {
         if($(e.target).hasClass('dropdown-submenu') || $(e.target).hasClass('submenu-pan')) {
@@ -148,17 +151,28 @@
     /**
      * when click bottom of nav bar
      */
-    $('.click-dropdown>ul>li').click(function(e) {         
+    $('.click-dropdown>ul>li').click(function(e) {    
+        if( $(e.target).hasClass('btn-submenu-close') )
+            return
         if ($(e.target).closest('li').hasClass('cn-dropdown-item')) {
-            $('.click-dropdown>ul>li').removeClass('active');
-            $(e.target).closest('li').addClass('active');
+            
+            if ( $('.click-dropdown>ul>li.active')[0] == $(e.target).closest('li')[0] ) {
+                $(e.target).closest('li').toggleClass('active')
+            } else {
+                $('.click-dropdown>ul>li.active').removeClass('active');
+                $(e.target).closest('li').addClass('active');        
+            }
             $('.bg-modal').removeClass('hide');
             console.log('clicked nav li');
-        } else {            
-            $('.click-dropdown>ul>li li').removeClass('active');
+        } else {
+            if ( $('.click-dropdown>ul>li li.active')[0] == e.target ) {
+                $(e.target).closest('li').toggleClass('active')
+            } else {
+                $('.click-dropdown>ul>li li.active').removeClass('active');
+                $(e.target).closest('li').addClass('active');        
+            }       
             let navbar_li_text = $(">a>span", $(e.target).closest('li').parent().parent()).text();
             let m_value = 248;
-            console.log($('.dropdown-submenu', $(e.target).closest('li'))[0]);
             switch(navbar_li_text) {
                 case "Personal Car Leasing" : break;
                 case "Business Car Leasing" : 
@@ -171,8 +185,88 @@
                     m_value = 248;                    
             }
             $('.dropdown-submenu', $(e.target).closest('li')).css('margin-left', `${m_value}px`);
-            $(e.target).closest('li').addClass('active');        
+
+            let nav_text = $(">a", $(e.target).closest('li')).text();
+            switch(nav_text.trim()) {
+                case "Manufacturer" : displayMakes($(e.target).closest('li')); break;
+                case "Model" : displayModelMakes($(e.target).closest('li')); break;
+                case "Budget" : displayBudgets($(e.target).closest('li')); break;
+            }
             console.log('clicked nav- dropdown li');
         }        
     });
+
+    $('.model-makes').on('change', (e) => {
+        let manfacturerUrl = $(e.target).val();
+        GetModelsAPI(1, manfacturerUrl).then((res) => {
+            setModelList($(e.target).closest('.navigation-tab-body'), res.data);
+        });
+    })
 })(jQuery);
+
+// nav for mobile
+$('li').click((e) => {
+    let nav_text = $($(">div", $(e.target).closest('li'))[0]).text();
+    switch(nav_text.trim()) {
+        case "Manufacturer" : displayMakes($(e.target).closest('li')); break;
+        case "Model" : displayModelMakes($(e.target).closest('li')); break;
+    }
+})
+// end nav for mobile
+
+const displayMakes = ( li_nav ) => {
+    let el_makes = $('.navigation-tab-body>div', li_nav);
+    el_makes.empty();
+    let makes = GetStaticMakes(1);
+    makes?.map((m, i) => {
+        el_makes.append(`
+            <div class="make-card">
+                <a href="#">
+                <img alt="${m.text}" width="40" height="40" class=" lazyloaded"
+                    src="${getImageURL(`website/static/makes/${m.id}.svg`)}"><span
+                    class="navigation_name__2Dks-">${m.id}
+                    <!-- -->
+                </span>
+                </a>
+            </div>
+        `)
+    });
+}
+
+const displayModelMakes = ( li_nav ) => {
+    if( !state.is_displaied_model_makes ) {
+        let select_makes = $('.model-makes', li_nav);
+        select_makes.empty();
+        let makes = GetStaticMakes(1);
+        select_makes.append(`<option value="">Select Make</option>`);
+        makes?.map((m, i) => {
+            select_makes.append(`
+                <option value="${m.id}">${m.text}</option>
+            `)
+        });
+        state.is_displaied_model_makes = true;
+    }
+}
+
+const setModelList = ( el_parent, data ) => {
+    let el_models = $(".model-list", el_parent);
+    el_models.empty();
+    el_models.append(`<option value="">Select Model</option>`);
+    data?.map((m, i) => {
+        el_models.append(`
+            <option value="${m.id}">${m.text}</option>
+        `)
+    });
+}
+
+const displayBudgets = ( li_nav ) => {
+    let el_budgets = $('.budget-list', li_nav);
+    el_budgets.empty();
+    let budgets = GetStaticBudgets();
+    budgets?.map((b, i) => {
+        el_budgets.append(`
+            <a href="${ GetDealTypeUrl(2, `/${b.type}/150`) }">${b.text}</a>
+        `)
+    })
+
+}
