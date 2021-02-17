@@ -1,6 +1,6 @@
 import { GetStaticMakes, GetStaticBudgets } from "../business-logic/vehicleService.js";
 import { GetModelsAPI } from "../API/VehicleAPI.js";
-import { GetDealTypeUrl } from "../helpers/urlHelper";
+import { GetDealTypeUrl } from "../helpers/urlHelper.js";
 
 (function ($) {
     'use strict';
@@ -155,7 +155,7 @@ import { GetDealTypeUrl } from "../helpers/urlHelper";
         if( $(e.target).hasClass('btn-submenu-close') )
             return
         if ($(e.target).closest('li').hasClass('cn-dropdown-item')) {
-            
+
             if ( $('.click-dropdown>ul>li.active')[0] == $(e.target).closest('li')[0] ) {
                 $(e.target).closest('li').toggleClass('active')
             } else {
